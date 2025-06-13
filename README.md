@@ -60,7 +60,7 @@ After importing the notebook in Google Drive, open the notebook in Google Colab 
 # Mount the drive content
 from google.colab import drive
 drive.mount('/content/drive')
-
+``` 
 ---
 
 ### Model Used
@@ -77,7 +77,7 @@ To load the pretrained NeCo checkpoint run the following cell:
 
 ---
 
-###What the Code Does
+### What the Code Does
 The notebook performs the following steps in the correspondind cells (check the 1st comment- title) :
 
 Preprocessing of thermal images (colorization, resizing, normalization)
@@ -111,7 +111,7 @@ Pre-extracted DINOv2 features for training the classifiers.
 
 ---
 
-###Summary Steps
+### Summary Steps
 Import the notebook (Fine_Tuned_DINOv2_Classification.ipynb) to your Google Drive (included in GitHub repository)
 
 Import the model checkpoint used (neco_on_dinov2r_vit14_model.ckpt) into Drive (use link https://drive.google.com/file/d/1Dv3M4hG10TV8VrU7HoR2WSuG1OUI-igx/view?usp=sharing) 
@@ -132,7 +132,7 @@ Note:
 Some code cells in the notebook are commented out. These are not required for running the notebook. They were left in place to preserve the development history and experimental steps taken while building the thesis.
 
 
-Contact
+### Contact
 Dimitriana Georgiou
 Department of Computer Science,  University of Cyprus
 Email: dgeorg04@ucy.ac.cy / Personal Email: DemiGeo3@gmail.com
