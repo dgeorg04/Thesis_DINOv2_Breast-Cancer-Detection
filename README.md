@@ -61,6 +61,8 @@ After importing the notebook in Google Drive, open the notebook in Google Colab 
 from google.colab import drive
 drive.mount('/content/drive')
 
+---
+
 ### Model Used
 This project uses the DINOv2 ViT-S/14 model with optional NeCo weights.
 
@@ -72,6 +74,8 @@ model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vits14')'
 To load the pretrained NeCo checkpoint run the following cell: 
 
 'model.load_state_dict(torch.load('path/to/neco_on_dinov2r_vit14_model.ckpt'), strict=False)'
+
+---
 
 ###What the Code Does
 The notebook performs the following steps in the correspondind cells (check the 1st comment- title) :
@@ -88,6 +92,8 @@ Training and evaluation of three classifier heads:
 2. MLP Classification Head (fully frozen backbone)
 3. MLP Classification Head (Partial Fine-Tuning / block 11 unfrozen) 
 
+---
+
 ### Split_Folds Folder
 The folder Split_Folds/ contains:
 
@@ -103,6 +109,7 @@ Test/
  2. .pt files for each fold:
 Pre-extracted DINOv2 features for training the classifiers.
 
+---
 
 ###Summary Steps
 Import the notebook (Fine_Tuned_DINOv2_Classification.ipynb) to your Google Drive (included in GitHub repository)
