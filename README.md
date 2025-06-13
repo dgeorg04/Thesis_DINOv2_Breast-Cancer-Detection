@@ -1,7 +1,7 @@
-# Thesis_DINOv2_Breast-Cancer-Detection
-#Dimitriana Georgiou - Department of Computer Science-UCY, 2025.
 
 # Thesis: Breast Cancer Detection Using DINOv2 on Thermal Images
+
+#Dimitriana Georgiou - Department of Computer Science-UCY, 2025.
 
 This repository contains the full code and dataset used in my undergraduate thesis:
 
@@ -10,6 +10,11 @@ This repository contains the full code and dataset used in my undergraduate thes
 The project explores the use of **frozen DINOv2 ViT-S/14 features** from thermal breast images to classify patients as **Healthy** or **Unhealthy** using multiple classifier architectures (Linear and MLPs). The experiments prioritize **high sensitivity (≥ 0.90)** and are evaluated using **5-fold stratified cross-validation**.
 
 ---
+******* DOWNLOAD DATASET ******** 
+Due to GitHub’s file size limitations, the full dataset and model checkpoint are hosted on Google Drive.
+🔗 https://drive.google.com/file/d/1Dv3M4hG10TV8VrU7HoR2WSuG1OUI-igx/view?usp=sharing
+After downloading, extract the contents and place them in your Google Drive in the appropriate folders as expected by the Colab notebook.
+
 
 ## Dataset Overview
 
@@ -49,7 +54,6 @@ Two runtime types were used based on availability and stability:
 ---
 
 ### How to Run the Notebook
-
 After importing the notebook in Google Drive, open the notebook in Google Colab and run the following cell first to mount your Google Drive:
 
 ```python
@@ -101,13 +105,13 @@ Pre-extracted DINOv2 features for training the classifiers.
 
 
 ###Summary Steps
-Import the notebook (Fine_Tuned_DINOv2_Classification.ipynb) to your Google Drive.
+Import the notebook (Fine_Tuned_DINOv2_Classification.ipynb) to your Google Drive (included in GitHub repository)
 
-Import the model checkpoint used (neco_on_dinov2r_vit14_model.ckpt) into Drive.
+Import the model checkpoint used (neco_on_dinov2r_vit14_model.ckpt) into Drive (use link https://drive.google.com/file/d/1Dv3M4hG10TV8VrU7HoR2WSuG1OUI-igx/view?usp=sharing) 
 
-Import the dataset folder newdb/ into Drive.
+Import the dataset folder newdb/ into Drive (use link https://drive.google.com/file/d/1Dv3M4hG10TV8VrU7HoR2WSuG1OUI-igx/view?usp=sharing) 
 
-Mount the Drive in Colab using:
+Mount the Drive in Colab using cell:
 
 from google.colab import drive
 drive.mount('/content/drive')
@@ -121,8 +125,7 @@ Note:
 Some code cells in the notebook are commented out. These are not required for running the notebook. They were left in place to preserve the development history and experimental steps taken while building the thesis.
 
 
-##########################################
- Contact
+Contact
 Dimitriana Georgiou
 Department of Computer Science,  University of Cyprus
 Email: dgeorg04@ucy.ac.cy / Personal Email: DemiGeo3@gmail.com
